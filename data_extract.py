@@ -13,6 +13,6 @@ rows = df.sample(n=120)
 print(rows)
 
 rows = rows.drop('type',1)
-writer = pd.ExcelWriter('output.xlsx')
+writer = pd.ExcelWriter('output_deb.xlsx')
 rows.to_excel(writer)
 writer.save()
