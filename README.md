@@ -40,7 +40,14 @@ Warren is a fraud https://t.co/BPstZAksu0"	**politics**
 
 "How's the climate in your local area? Is it…"	**politics**
 
+## Points to keep in mind
+While many of the text sequences would have keywords and context which you can use to decide whether it should be labeled as politics or sports, there would be sentences which might not be intuitive enought for you to judge. Take for instance, 
 
+** "RT @ellymelly: A friend of mine has discovered 2020's pick-up line of choice (do NOT use it)!
+"How's the climate in your local area? Is it…** 
+
+The above text doesn't directly correspond to sports or politics but in the original dataset it's labeled as **politics**. A quick search on the google with the user handle 'ellymelly' depicted that this particular user always tweets on political issues and thus the label makes sense.
+This being said, I don't expect this fine grained analysis from you, and just want you to label it as best as you can. Cheers and good luck 👍
 
 
 
