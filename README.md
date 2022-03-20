@@ -7,9 +7,9 @@ Once done, you can push the file back to the repo.
 IMPORTANT : Please make changes to the file with your name as the suffix. **Do not overwrite other user's file.**
 
 
-Examples : 
+ 
 
-## data with label = sports 
+## Example data with label = sports 
 (1)
 @ACNI2012 @TheToka920 Never knew having 1 or 2 followers had anything to do with reality...Malinga has never been s… https://t.co/SSmLS18O4k	**sports**
 
@@ -25,7 +25,7 @@ September, 2011: Sham Chotoo of the Bowie Boys and Girls Club joins Maryland You
 
 😲🙃😵😵😵 #Cricket #BBL09"	**sports**
 
-## data with label = politics
+## Example data with label = politics
 (1)
 "RT @allisonpearson: “We believe they have made an informed choice about their sexual behaviour.”
 Gordon Brown’s government on the young gir…"	**politics**
