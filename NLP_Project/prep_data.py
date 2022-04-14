@@ -8,6 +8,8 @@ import requests
 import wikipedia
 import re
 
+
+not_found = 0
 '''
 Links:
 1) https://aneesha.medium.com/beyond-bag-of-words-using-pytextrank-to-find-phrases-and-summarize-text-f736fa3773c5
@@ -29,7 +31,11 @@ def get_summary():
 '''
 
 def get_summary_wikipedia(title):
-    wiki = wikipedia.page(title)
+    try:
+        wiki = wikipedia.page(title)
+    except:
+
+        return None
     # wiki = wikipedia.page('The Time Machine')
     # Extract the plain text content of the page
     text = wiki.content
@@ -88,11 +94,14 @@ def read_sf_gram():
     # res = get_summary_wikipedia("Starman's Quest")
     # exit()
     
+    t_count = 0
     for book in sf_dict:
         if 'original_title' not in book.keys():
             continue
-        title = book['original_title']
-        # print(title)
+        title = book['title']
+        # if title is not None:
+        #     t_count = t_count + 1
+
         if 'plot' in book.keys():
             get_rank(book['plot'])
             keywords = get_rank(book['plot'])
@@ -104,7 +113,8 @@ def read_sf_gram():
                 continue
             keywords = get_rank(plot)
             book["keywords"] = keywords
-            
+    
+    # print('tcount',t_count)
     count = 0
     for book in sf_dict:
         if 'keywords' in book.keys():
